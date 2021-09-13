@@ -1,7 +1,10 @@
-package com.example.servingwebcontent;
+package com.example.entities;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.sql.Timestamp;
 
 @Entity(name = "Messages")
 @Table(name = "messages")
@@ -74,7 +77,6 @@ public class Messages {
         this.text = text;
         this.likes = likes;
         this.dislikes = dislikes;
-
     }
 
     public Messages() {
